@@ -1,73 +1,51 @@
-Fake News Detection with Naive Bayes
+# Fake News Detection with Naive Bayes
 
-This project implements a machine learning model to classify news articles as fake or real using the Naive Bayes algorithm. It leverages natural language processing (NLP) techniques to preprocess text data and build an effective classification model.
+This project implements a machine learning model to classify news articles as **fake** or **real** using the **Naive Bayes** algorithm. It leverages natural language processing (NLP) techniques to preprocess text data and build an effective classification model.
 
-📁 Project Structure
-├── Fake.csv                # Dataset containing fake news articles
-├── True.csv                # Dataset containing real news articles
-├── final_data.csv          # Combined and preprocessed dataset
-├── final_model.pkl         # Trained Naive Bayes model
-├── final_vector.pkl        # TF-IDF vectorizer
+## Project Structure
+
+├── Fake.csv # Dataset containing fake news articles
+├── True.csv # Dataset containing real news articles
+├── final_data.csv # Combined and preprocessed dataset
+├── final_model.pkl # Trained Naive Bayes model
+├── final_vector.pkl # TF-IDF vectorizer
 ├── Fake News Detection.ipynb # Jupyter Notebook for model training and evaluation
-├── Fake News Detection.py   # Python script for model training and evaluation
-└── README.md               # Project documentation
+├── Fake News Detection.py # Python script for model training and evaluation
+└── README.md # Project documentation
 
-🧠 Approach
+## Approach
 
-Data Collection: Utilized publicly available datasets containing labeled news articles.
+1. **Data Collection**: Used publicly available datasets of labeled news articles.
+2. **Preprocessing**: Cleaned and tokenized text, removed stopwords, applied TF-IDF vectorization.
+3. **Modeling**: Trained a Naive Bayes classifier to distinguish between fake and real news.
+4. **Evaluation**: Measured performance using accuracy, precision, recall, and F1-score.
 
-Preprocessing: Cleaned and tokenized text data, removing stopwords and applying TF-IDF vectorization.
+## Getting Started
 
-Modeling: Implemented the Naive Bayes algorithm to train the classification model.
+### Prerequisites
 
-Evaluation: Assessed model performance using metrics such as accuracy, precision, recall, and F1-score.
+Install the required Python packages:
 
-🚀 Getting Started
-Prerequisites
-
-Ensure you have the following Python packages installed:
-
-pandas
-
-numpy
-
-scikit-learn
-
-nltk
-
-matplotlib
-
-seaborn
-
-You can install them using pip:
-
+```bash
 pip install pandas numpy scikit-learn nltk matplotlib seaborn
-
 Running the Model
-
 Clone the repository:
 
 git clone https://github.com/Nabin0727/fake-news-naive_bayes_algorithm.git
 cd fake-news-naive_bayes_algorithm
-
-
 Run the Jupyter Notebook:
 
 jupyter notebook Fake\ News\ Detection.ipynb
-
-
 Or execute the Python script:
 
 python Fake\ News\ Detection.py
+```
+## Results
+The Naive Bayes model achieves high accuracy in classifying news articles as fake or real.
 
-📈 Results
+## Future Enhancements
+Create a Flask API for real-time predictions.
 
-The Naive Bayes model achieved an accuracy of approximately XX%, demonstrating its effectiveness in classifying news articles.
+Compare with other classifiers like SVM and Random Forest.
 
-🔧 Future Enhancements
-
-Implement a Flask API to serve the model for real-time predictions.
-
-Explore other classification algorithms like SVM and Random Forest for comparison.
-
-Integrate deep learning models for improved performance.
+Explore deep learning approaches for improved accuracy.
