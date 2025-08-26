@@ -5,12 +5,19 @@ This project implements a machine learning model to classify news articles as **
 ## Project Structure
 
 ├── Fake.csv # Dataset containing fake news articles
+
 ├── True.csv # Dataset containing real news articles
+
 ├── final_data.csv # Combined and preprocessed dataset
+
 ├── final_model.pkl # Trained Naive Bayes model
+
 ├── final_vector.pkl # TF-IDF vectorizer
+
 ├── Fake News Detection.ipynb # Jupyter Notebook for model training and evaluation
+
 ├── Fake News Detection.py # Python script for model training and evaluation
+
 └── README.md # Project documentation
 
 ## Approach
